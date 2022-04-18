@@ -11,13 +11,17 @@ def main():
 
   print("\n \nCreando una instancia de uber x\n \n")
   uber_x_a = UberX("AWS145","Jesus","Honda", "Civic")
-  uber_x_a.print_data_uber_x()
-  uber_x_a.set_passengers(6)
-  uber_x_a.print_data_uber_x()
+  uber_x_a.print_data_car()
+  uber_x_a.set_passengers(4)
+  uber_x_a.print_data_car()
   
   
   print("\nCreando una instancia de uber van\n")
-  uber_van_x = UberVan("ASD2345", "Jesus Cruz", "Acura - MDX")
+  uber_van_x = UberVan("ASD2345", "Jesus", "Acura")
+  uber_van_x.print_data_car()
+  uber_van_x.set_passengers(6)
+  uber_van_x.print_data_car()
+  
   
 
 if __name__ == "__main__":

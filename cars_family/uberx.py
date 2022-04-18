@@ -9,15 +9,21 @@ class UberX(Car):
     self.brand = brand
     self.model = model
     
-  def print_data_uber_x(self):
+  def print_data_car(self):
+    """Reescribiendo el metodo print data car heredado del padre, agregando una instruccion mas
+    
+    agregamos la marca (self.brand) y el modelo (self.model)
+    debajo de estas declaraciones mandamos a llamar el metodo de la superclase con las instrucciones que nos manda por default
+    """
     print("\nCreacion de Uberx\n")
-    self.print_data_car()
     print(f"Brand: {self.brand} \nModel: {self.model}")  
+    super().print_data_car()
     
   def set_passengers(self, value):
+    # Sobreescritura de metodo: "Polimorfismo"
     if type(value) == int:
       if value != 4:
         return print("\nPor favor ingresa la cantidad de 4 pasajeros\n")
-    else:
-      return super().set_passengers(value)
+   
+    return super().set_passengers(value)
 

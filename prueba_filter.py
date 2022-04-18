@@ -11,5 +11,8 @@ def filter_car(list_cars, car):
     return False
   return filter(iterartor_func, list_cars)
 
-found_car = filter_car(cars_acepted, "Acura")
-print(list(found_car))
+found_car = list(filter_car(cars_acepted, "Acura"))
+
+for dict in found_car:
+  for key, value in dict.items():
+    print(f"{key}: {value}")
