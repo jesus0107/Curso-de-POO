@@ -1,7 +1,7 @@
 from account import Account
 
 class Car:
-  def __init__(self, id = 0, license = "", driver = Account, passanger = 0):
+  def __init__(self, id = 0, license = "", driver = Account.name, passanger = 0):
     self.id = id
     self.license = license
     self.driver = driver
